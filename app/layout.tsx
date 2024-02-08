@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Flow_Circular } from 'next/font/google';
 import { circularStd } from '@/fonts/fonts';
+import { Nav } from '@/components/nav/Nav';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={circularStd.className}>{children}</body>
+			<body className={circularStd.className}>
+				<Nav />
+				{children}
+			</body>
 		</html>
 	);
 }
