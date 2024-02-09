@@ -11,7 +11,7 @@ export const Header = () => {
 					<h1 className='font-bold text-4xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-primary-gray 2xl:w-[30rem]'>
 						We Create Startups.
 					</h1>
-					<p className='my-3 md:my-4 xl:my-6 text-lg md:text-xl  xl:text-2xl text-primary-orange'>
+					<p className='my-3 md:my-4 xl:my-6 text-lg md:text-xl  xl:text-2xl text-primary-orange font-bold'>
 						We are startup studio that develops and launches new companies.
 					</p>
 					<CustomLink size={'lg'} variant={'primary'} href='/'>

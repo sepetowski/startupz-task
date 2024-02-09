@@ -21,7 +21,7 @@ export const MobileNav = ({ isOpen, onClose }: Props) => {
 						<X />
 					</button>
 				</div>
-				<span className='w-full h-[0.05rem] block bg-primary-gray my-4'></span>
+				<hr className='w-full block border-primary-gray my-4'></hr>
 				<CustomLink
 					onClick={onClose}
 					className='p-0 md:p-0 font-bold text-lg sm:text-xl'

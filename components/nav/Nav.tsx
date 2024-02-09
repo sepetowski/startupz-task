@@ -1,17 +1,27 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Logo } from './Logo';
 import { CustomLink } from '@/components/ui/CustomLink';
 import { Wrapper } from '@/components/ui/Wrapper';
 import { MobileNav } from './MobileNav';
 import { Menu } from 'lucide-react';
+import { useMediaQuery } from '@react-hook/media-query';
 
 export const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
 	const onCloseNav = () => {
 		setIsOpen(false);
 	};
+
+	useEffect(() => {
+		if (isOpen && isSmallScreen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
+	}, [isOpen, isSmallScreen]);
 
 	return (
 		<nav className='w-full fixed top-0 left-0 bg-primary-white z-50'>
