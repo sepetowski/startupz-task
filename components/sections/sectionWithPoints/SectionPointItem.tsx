@@ -1,11 +1,13 @@
-import { WhoWeAreItem } from '@/types/types';
+import { SectionPointItem as SectionPointItemI } from '@/types/types';
 import React from 'react';
 
-interface Props extends WhoWeAreItem {}
+interface Props extends SectionPointItemI {
+	equal: boolean;
+}
 
-export const WhoWeAreDescription = ({ countNumber, desc }: Props) => {
+export const SectionPointItem = ({ countNumber, desc, equal }: Props) => {
 	return (
-		<div>
+		<div className={` ${equal ? 'w-1/2' : ''}`}>
 			<h3 className='mb-3 md:mb-4  text-xl md:text-2xl  lg:text-3xl text-primary-orange font-bold'>
 				{countNumber}
 			</h3>

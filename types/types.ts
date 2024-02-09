@@ -1,4 +1,14 @@
-export interface WhoWeAreItem {
-	countNumber: '01' | '02' | '03';
+export interface SectionPointItem {
+	countNumber: string;
 	desc: string;
+}
+export interface WorkCard {
+	title: string;
+	desc: string;
+	img: {
+		alt: string;
+		src: string;
+	};
+	titleColor: string;
+	href: string;
 }
