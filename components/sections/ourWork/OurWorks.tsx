@@ -9,7 +9,7 @@ export const OurWorks = () => {
 	return (
 		<Section>
 			<Wrapper className='mb-40'>
-				<h2 className='text-primary-gray font-bold text-4xl md:text-5xl  lg:text-6xl text-center mb-14'>
+				<h2 className='text-primary-gray font-bold text-4xl md:text-5xl  text-center mb-14'>
 					Our works
 				</h2>
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-full'>

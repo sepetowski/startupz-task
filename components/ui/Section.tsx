@@ -8,8 +8,6 @@ interface Props {
 
 export const Section = ({ children, className }: Props) => {
 	return (
-		<section className={cn('py-20 md:py-32 lg:py-40 bg-primary-white', className)}>
-			{children}
-		</section>
+		<section className={cn('py-20 md:py-32  bg-primary-white', className)}>{children}</section>
 	);
 };

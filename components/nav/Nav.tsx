@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { Logo } from './Logo';
+import { Logo } from '../ui/Logo';
 import { CustomLink } from '@/components/ui/CustomLink';
 import { Wrapper } from '@/components/ui/Wrapper';
 import { MobileNav } from './MobileNav';

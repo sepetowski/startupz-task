@@ -4,6 +4,8 @@ import { SectionWithPoints } from '@/components/sections/sectionWithPoints/Secti
 import { OUR_CORE_VALUES, WHO_WE_ARE_DESCRIPTIONS } from '@/lib/constants';
 import { Section } from '@/components/ui/Section';
 import { OurWorks } from '@/components/sections/ourWork/OurWorks';
+import { Hiring } from '@/components/sections/hiring/Hiring';
+import { FormSection } from '@/components/sections/form/FormSection';
 
 const Home = () => {
 	return (
@@ -31,6 +33,8 @@ const Home = () => {
 					}}
 				/>
 				<OurWorks />
+				<Hiring />
+				<FormSection />
 			</main>
 		</>
 	);
