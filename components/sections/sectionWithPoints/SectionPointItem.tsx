@@ -7,7 +7,7 @@ interface Props extends SectionPointItemI {
 
 export const SectionPointItem = ({ countNumber, desc, equal }: Props) => {
 	return (
-		<div className={` ${equal ? 'w-1/2' : ''}`}>
+		<div className={` ${equal ? 'md:w-1/2' : ''}`}>
 			<h3 className='mb-3 md:mb-4  text-xl md:text-2xl  lg:text-3xl text-primary-orange font-bold'>
 				{countNumber}
 			</h3>

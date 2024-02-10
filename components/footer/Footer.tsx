@@ -9,7 +9,7 @@ export const Footer = () => {
 		<footer>
 			<Wrapper className='py-8 md:py-16 flex flex-col md:flex-row justify-between items-start '>
 				<div className='flex flex-col  mb-8 md:mb-0  md:justify-between md:h-44 px-2 '>
-					<Logo className='p-0 mt-[-1rem]' />
+					<Logo className='p-0 mt-[-1rem] sm:w-40 sm:h-9 md:w-44 md:h-10 lg:w-52 lg:h-12' />
 					<div className='text-secondary-gray mt-4 md:mt-0'>
 						<p>© 2020 Startupz.</p>
 						<p>All rights reserved. </p>
