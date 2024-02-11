@@ -16,7 +16,7 @@ export const Section = ({ children, className, id }: Props) => {
 
 	return (
 		<motion.section
-			ref={section as React.Ref<HTMLDivElement> | undefined}
+			ref={section as React.Ref<HTMLElement> | undefined}
 			variants={fade}
 			animate={sectionControlls as AnimationControls}
 			initial='hidden'

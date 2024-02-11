@@ -6,8 +6,8 @@ import { Section } from '@/components/ui/Section';
 import { SectionPointItem } from './SectionPointItem';
 import { SectionPointItem as SectionPointItemI } from '@/types/types';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { fade, goUpAnim } from '@/animations/animations';
+import Image from 'next/image';
 
 interface Props {
 	items: SectionPointItemI[];

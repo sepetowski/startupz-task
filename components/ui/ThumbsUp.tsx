@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 
-import { motion } from 'framer-motion';
 import { Wrapper } from '@/components/ui/Wrapper';
-import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { fade, goUpAnim } from '@/animations/animations';
+import Image from 'next/image';
 
 interface Props {
 	text: string;
