@@ -5,6 +5,7 @@ import { Footer } from '@/components/footer/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
+import { NavShadowProvider } from '@/store/NavShadowContext';
 
 export const metadata: Metadata = {
 	title: 'Startupz',
@@ -18,12 +19,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={circularStd.className}>
-				<ToastContainer />
-				<Nav />
-				{children}
-				<Footer />
-			</body>
+			<NavShadowProvider>
+				<body className={circularStd.className}>
+					<ToastContainer />
+					<Nav />
+					{children}
+					<Footer />
+				</body>
+			</NavShadowProvider>
 		</html>
 	);
 }

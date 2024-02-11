@@ -1,8 +1,12 @@
+'use client';
 import React from 'react';
 
 import { Section } from '@/components/ui/Section';
 import { Wrapper } from '@/components/ui/Wrapper';
+import { motion } from 'framer-motion';
+import { goUpAnim } from '@/animations/animations';
 import Image from 'next/image';
+import { CustomLink } from '@/components/ui/CustomLink';
 
 export const Hiring = () => {
 	return (
@@ -32,13 +36,21 @@ export const Hiring = () => {
 					/>
 				</div>
 				<div className='mt-6 md:mt-0 w-full text-center max-w-xl'>
-					<h2 className='text-primary-gray font-bold text-4xl md:text-5xl  text-center '>
+					<motion.h2
+						variants={goUpAnim}
+						className='text-primary-gray font-bold text-4xl md:text-5xl  text-center '>
 						We are hiring!
-					</h2>
-					<p className='mt-4 text-lg md:text-xl  xl:text-2xl text-primary-orange font-bold'>
-						We&apos;re always looking for talented people to join and help build our startups.Check
-						out our current openings
-					</p>
+					</motion.h2>
+					<motion.div
+						variants={goUpAnim}
+						className='my-4 md:my-6 text-lg md:text-xl  xl:text-2xl text-primary-orange font-bold'>
+						<p>We&apos;re always looking for talented people</p>
+						<p>to join and help build our startups.</p>
+						<p>Check out our current openings</p>
+					</motion.div>
+					<CustomLink variant={'primary'} href='/jobs'>
+						See current openings
+					</CustomLink>
 				</div>
 			</Wrapper>
 			<Image

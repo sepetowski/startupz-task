@@ -1,13 +1,24 @@
+'use client';
 import React from 'react';
 
 import { Wrapper } from '@/components/ui/Wrapper';
 import { Logo } from '@/components/ui/Logo';
 import { CustomLink } from '@/components/ui/CustomLink';
+import { AnimationControls, motion } from 'framer-motion';
+import { fade } from '@/animations/animations';
 import Image from 'next/image';
+import { useScrollAnim } from '@/hooks/useScrollAnim';
 
 export const Footer = () => {
+	const [footer, footerControlls] = useScrollAnim(0.2);
+
 	return (
-		<footer className='bg-primary-white'>
+		<motion.footer
+			ref={footer as React.Ref<HTMLElement> | undefined}
+			variants={fade}
+			animate={footerControlls as AnimationControls}
+			initial='hidden'
+			className='bg-primary-white'>
 			<Wrapper className='py-8 md:py-16 flex flex-col md:flex-row justify-between items-start '>
 				<div className='flex flex-col  mb-8 md:mb-0  md:justify-between md:h-44 px-2 '>
 					<Logo className='p-0 mt-[-1rem] sm:w-40 sm:h-9 md:w-44 md:h-10 lg:w-52 lg:h-12' />
@@ -107,6 +118,6 @@ export const Footer = () => {
 					</div>
 				</div>
 			</Wrapper>
-		</footer>
+		</motion.footer>
 	);
 };

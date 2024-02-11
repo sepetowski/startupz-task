@@ -7,10 +7,14 @@ import { Wrapper } from '@/components/ui/Wrapper';
 import { MobileNav } from './MobileNav';
 import { Menu } from 'lucide-react';
 import { useMediaQuery } from '@react-hook/media-query';
+import { useNavShadowContext } from '@/store/NavShadowContext';
+import { motion } from 'framer-motion';
+import { fade } from '@/animations/animations';
 
 export const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const isSmallScreen = useMediaQuery('(max-width: 1024px)');
+	const { hasShadow } = useNavShadowContext();
 
 	const onCloseNav = () => {
 		setIsOpen(false);
@@ -25,7 +29,13 @@ export const Nav = () => {
 	}, [isOpen, isSmallScreen]);
 
 	return (
-		<nav className='w-full fixed top-0 left-0 bg-primary-white z-50 shadow-sm'>
+		<motion.nav
+			variants={fade}
+			initial='hidden'
+			animate='show'
+			className={`w-full fixed top-0 left-0 bg-primary-white z-50 transition-shadow duration-200  ${
+				hasShadow ? 'shadow-md' : ''
+			}`}>
 			<Wrapper className='flex justify-between items-center py-4 '>
 				<Logo />
 				<div className='hidden lg:flex items-center gap-6 '>
@@ -48,6 +58,6 @@ export const Nav = () => {
 				</button>
 			</Wrapper>
 			<MobileNav isOpen={isOpen} onClose={onCloseNav} />
-		</nav>
+		</motion.nav>
 	);
 };

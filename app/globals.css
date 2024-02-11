@@ -4,11 +4,11 @@
 
 html {
 	scroll-behavior: smooth !important;
-	scroll-padding: 70px;
+	scroll-padding-top: 70px;
 }
 
 @media (min-width: 1024px) {
 	html {
-		scroll-padding: 70px;
+		scroll-padding-top: 80px;
 	}
 }

@@ -10,6 +10,8 @@ import { formSendSimulation } from '@/lib/utils';
 import { ErrorMessage } from '@/components/ui/ErrorMessage';
 import { Loader2 } from 'lucide-react';
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion';
+import { fade } from '@/animations/animations';
 
 export const Form = () => {
 	const [isSending, setIsSending] = useState(false);
@@ -42,7 +44,8 @@ export const Form = () => {
 	};
 
 	return (
-		<form
+		<motion.form
+			variants={fade}
 			onSubmit={handleSubmit(onSubmit)}
 			className='w-full max-w-md bg-secondary-white shadow-sm rounded-md px-6 pt-14 pb-7 mt-6 flex flex-col items-center gap-4 '>
 			<div className='w-full space-y-1.5'>
@@ -85,6 +88,6 @@ export const Form = () => {
 					'Shoot us a message'
 				)}
 			</Button>
-		</form>
+		</motion.form>
 	);
 };
