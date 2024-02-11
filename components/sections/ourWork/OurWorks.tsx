@@ -8,7 +8,7 @@ import { OUR_WORKS } from '@/lib/constants';
 
 export const OurWorks = () => {
 	return (
-		<Section>
+		<Section id='startups'>
 			<Wrapper className='mb-40'>
 				<h2 className='text-primary-gray font-bold text-4xl md:text-5xl  text-center mb-14'>
 					Our works

@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export const Footer = () => {
 	return (
-		<footer>
+		<footer className='bg-primary-white'>
 			<Wrapper className='py-8 md:py-16 flex flex-col md:flex-row justify-between items-start '>
 				<div className='flex flex-col  mb-8 md:mb-0  md:justify-between md:h-44 px-2 '>
 					<Logo className='p-0 mt-[-1rem] sm:w-40 sm:h-9 md:w-44 md:h-10 lg:w-52 lg:h-12' />
@@ -20,16 +20,32 @@ export const Footer = () => {
 				<div className='flex flex-col mb-8 md:mb-0 md:justify-between md:h-44 px-2'>
 					<h3 className='mb-2 font-bold text-primary-gray  '>Companies</h3>
 					<div className='flex flex-col items-start'>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://tolq.com'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							Tolq
 						</CustomLink>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://legalsite.co'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							LegalSite
 						</CustomLink>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://codekeeper.co'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							Codekeeper
 						</CustomLink>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://feedbacklabs.org'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							Feedback Labs
 						</CustomLink>
 					</div>
@@ -42,14 +58,18 @@ export const Footer = () => {
 						Netherlands
 					</p>
 
-					<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+					<CustomLink href='#contact' className='text-primary-blue px-0' size={'sm'}>
 						Send us an email
 					</CustomLink>
 				</div>
 				<div className='flex flex-col px-2'>
 					<h3 className='mb-2 font-bold text-primary-gray  '>Follow us</h3>
 					<div className='flex flex-col gap-2 items-start'>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://twitter.com'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							<Image
 								className='w-6 h-6'
 								src={'/svg/twitter.svg'}
@@ -58,7 +78,11 @@ export const Footer = () => {
 								height={50}
 							/>
 						</CustomLink>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://www.linkedin.com'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							<Image
 								className='w-6 h-6'
 								src={'/svg/linkedin.svg'}
@@ -67,7 +91,11 @@ export const Footer = () => {
 								height={50}
 							/>
 						</CustomLink>
-						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
+						<CustomLink
+							target='_blank'
+							href='https://www.instagram.com'
+							className='text-primary-blue px-0'
+							size={'sm'}>
 							<Image
 								className='w-6 h-6'
 								src={'/svg/instagram.svg'}

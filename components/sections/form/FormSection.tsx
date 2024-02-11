@@ -1,12 +1,13 @@
+import React from 'react';
+
 import { Section } from '@/components/ui/Section';
 import { Wrapper } from '@/components/ui/Wrapper';
 import Image from 'next/image';
-import React from 'react';
 import { Form } from './Form';
 
 export const FormSection = () => {
 	return (
-		<Section className='bg-secondary-orange py-16 md:py-16 lg:py-16 overflow-hidden '>
+		<Section id='contact' className='bg-secondary-orange py-16 md:py-16 lg:py-16 overflow-hidden '>
 			<Wrapper className='relative '>
 				<div className='max-w-3xl'>
 					<h2 className='text-primary-white font-bold text-4xl md:text-5xl    '>

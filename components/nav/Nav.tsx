@@ -25,17 +25,17 @@ export const Nav = () => {
 	}, [isOpen, isSmallScreen]);
 
 	return (
-		<nav className='w-full fixed top-0 left-0 bg-primary-white z-50'>
+		<nav className='w-full fixed top-0 left-0 bg-primary-white z-50 shadow-sm'>
 			<Wrapper className='flex justify-between items-center py-4 '>
 				<Logo />
 				<div className='hidden lg:flex items-center gap-6 '>
-					<CustomLink className='p-0' variant={'default'} href='/'>
+					<CustomLink className='p-0' variant={'default'} href='#startups'>
 						Startups
 					</CustomLink>
-					<CustomLink className='p-0' variant={'default'} href='/'>
+					<CustomLink className='p-0' variant={'default'} href='#contact'>
 						Contact
 					</CustomLink>
-					<CustomLink variant={'outline'} size={'lg'} href='/'>
+					<CustomLink variant={'outline'} size={'lg'} href='/work-with-us'>
 						Work with us!
 					</CustomLink>
 				</div>

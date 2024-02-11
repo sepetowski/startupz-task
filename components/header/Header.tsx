@@ -15,7 +15,7 @@ export const Header = () => {
 					<p className='my-3 md:my-4 xl:my-6 text-lg md:text-xl  xl:text-2xl text-primary-orange font-bold'>
 						We are startup studio that develops and launches new companies.
 					</p>
-					<CustomLink size={'lg'} variant={'primary'} href='/'>
+					<CustomLink size={'lg'} variant={'primary'} href='#startups'>
 						See our works
 					</CustomLink>
 				</div>
