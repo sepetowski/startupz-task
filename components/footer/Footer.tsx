@@ -1,7 +1,8 @@
 import React from 'react';
-import { Wrapper } from '../ui/Wrapper';
-import { Logo } from '../ui/Logo';
-import { CustomLink } from '../ui/CustomLink';
+
+import { Wrapper } from '@/components/ui/Wrapper';
+import { Logo } from '@/components/ui/Logo';
+import { CustomLink } from '@/components/ui/CustomLink';
 import Image from 'next/image';
 
 export const Footer = () => {
@@ -49,13 +50,31 @@ export const Footer = () => {
 					<h3 className='mb-2 font-bold text-primary-gray  '>Follow us</h3>
 					<div className='flex flex-col gap-2 items-start'>
 						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
-							<Image className='w-6 h-6' src={'/svg/twitter.svg'} alt='' width={50} height={50} />
+							<Image
+								className='w-6 h-6'
+								src={'/svg/twitter.svg'}
+								alt='twitter icon'
+								width={50}
+								height={50}
+							/>
 						</CustomLink>
 						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
-							<Image className='w-6 h-6' src={'/svg/linkedin.svg'} alt='' width={50} height={50} />
+							<Image
+								className='w-6 h-6'
+								src={'/svg/linkedin.svg'}
+								alt='linkedin icon'
+								width={50}
+								height={50}
+							/>
 						</CustomLink>
 						<CustomLink href='/' className='text-primary-blue px-0' size={'sm'}>
-							<Image className='w-6 h-6' src={'/svg/instagram.svg'} alt='' width={50} height={50} />
+							<Image
+								className='w-6 h-6'
+								src={'/svg/instagram.svg'}
+								alt='instargram icon'
+								width={50}
+								height={50}
+							/>
 						</CustomLink>
 					</div>
 				</div>

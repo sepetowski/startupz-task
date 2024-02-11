@@ -1,5 +1,6 @@
-import { SectionPointItem as SectionPointItemI } from '@/types/types';
 import React from 'react';
+
+import { SectionPointItem as SectionPointItemI } from '@/types/types';
 
 interface Props extends SectionPointItemI {
 	equal: boolean;

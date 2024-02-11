@@ -9,5 +9,5 @@ interface ErrorProps {
 
 export const ErrorMessage = ({ className, error }: ErrorProps) => {
 	if (!error) return null;
-	return <p className={cn('text-sm font-medium text-red-600', className)}>{error.message}</p>;
+	return <p className={cn('text-sm font-medium text-red-600   ', className)}>{error.message}</p>;
 };

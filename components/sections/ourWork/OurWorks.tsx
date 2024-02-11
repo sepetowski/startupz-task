@@ -1,7 +1,8 @@
+import React from 'react';
+
 import { Section } from '@/components/ui/Section';
 import { ThumbsUp } from '@/components/ui/ThumbsUp';
 import { Wrapper } from '@/components/ui/Wrapper';
-import React from 'react';
 import { WorkCard } from './WorkCard';
 import { OUR_WORKS } from '@/lib/constants';
 
@@ -27,8 +28,7 @@ export const OurWorks = () => {
 			</Wrapper>
 			<ThumbsUp
 				center
-				text='Startups create a world that actually is better. Any problem that can be solved, will be solved by a startup, and that is a huge opportunity.
-'
+				text='Startups create a world that actually is better. Any problem that can be solved, will be solved by a startup, and that is a huge opportunity.'
 			/>
 		</Section>
 	);

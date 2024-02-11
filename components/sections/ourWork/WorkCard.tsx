@@ -1,7 +1,8 @@
+import React, { useMemo } from 'react';
+
 import { CustomLink } from '@/components/ui/CustomLink';
 import { WorkCard as WorkCardI } from '@/types/types';
 import Image from 'next/image';
-import React, { useMemo } from 'react';
 
 interface Props extends WorkCardI {}
 
@@ -33,7 +34,7 @@ export const WorkCard = ({ desc, href, img: { alt, src }, title, titleColor }: P
 				width={800}
 				height={800}
 			/>
-			<CustomLink variant={'outline'} size={'lg'} href={href}>
+			<CustomLink target='_blank' variant={'outline'} size={'lg'} href={href}>
 				More
 			</CustomLink>
 		</div>

@@ -1,7 +1,8 @@
 import React from 'react';
+
 import { Wrapper } from '@/components/ui/Wrapper';
+import { CustomLink } from '@/components/ui/CustomLink';
 import Image from 'next/image';
-import { CustomLink } from '../ui/CustomLink';
 
 export const Header = () => {
 	return (
@@ -22,7 +23,7 @@ export const Header = () => {
 				<Image
 					fetchPriority='high'
 					className='lg:self-end max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-none 2xl:absolute bottom-0  right-0 object-contain 2xl:w-1/2 '
-					alt='header'
+					alt='Stratupz header image'
 					src={'/imgs/header.png'}
 					height={800}
 					width={800}

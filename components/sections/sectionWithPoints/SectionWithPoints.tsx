@@ -1,7 +1,6 @@
-import { Wrapper } from '@/components/ui/Wrapper';
 import React from 'react';
 
-import { WHO_WE_ARE_DESCRIPTIONS } from '@/lib/constants';
+import { Wrapper } from '@/components/ui/Wrapper';
 import { Section } from '@/components/ui/Section';
 import { SectionPointItem } from './SectionPointItem';
 import { SectionPointItem as SectionPointItemI } from '@/types/types';

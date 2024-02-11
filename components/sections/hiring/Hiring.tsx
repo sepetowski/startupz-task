@@ -1,7 +1,8 @@
+import React from 'react';
+
 import { Section } from '@/components/ui/Section';
 import { Wrapper } from '@/components/ui/Wrapper';
 import Image from 'next/image';
-import React from 'react';
 
 export const Hiring = () => {
 	return (
@@ -9,7 +10,7 @@ export const Hiring = () => {
 			<Image
 				className='hidden md:block w-36 lg:w-48 xl:w-72 2xl:w-96'
 				src='/svg/hiringLeft.svg'
-				alt=''
+				alt='Employee icon'
 				width={500}
 				height={500}
 			/>
@@ -18,14 +19,14 @@ export const Hiring = () => {
 					<Image
 						className='w-24 sm:w-36 '
 						src='/svg/hiringLeft.svg'
-						alt=''
+						alt='Employee icon'
 						width={500}
 						height={500}
 					/>
 					<Image
 						className='w-24 sm:w-36 '
 						src='/svg/hiringRight.svg'
-						alt=''
+						alt='Employer icon'
 						width={500}
 						height={500}
 					/>
@@ -43,7 +44,7 @@ export const Hiring = () => {
 			<Image
 				className='hidden md:block w-36 lg:w-48 xl:w-72 2xl:w-96'
 				src='/svg/hiringRight.svg'
-				alt=''
+				alt='Employer icon'
 				width={500}
 				height={500}
 			/>

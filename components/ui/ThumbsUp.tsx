@@ -17,7 +17,7 @@ export const ThumbsUp = ({ text, center }: Props) => {
 			<Image
 				className='object-contain w-10 md:w-16'
 				src={'/svg/thumbRight.svg'}
-				alt=''
+				alt='Thumb up icon'
 				width={80}
 				height={80}
 			/>
@@ -27,7 +27,7 @@ export const ThumbsUp = ({ text, center }: Props) => {
 			<Image
 				className='object-contain w-10 md:w-16'
 				src={'/svg/thumbLeft.svg'}
-				alt=''
+				alt='Thumb up icon'
 				width={80}
 				height={80}
 			/>

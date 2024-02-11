@@ -1,7 +1,9 @@
 'use client';
 import React from 'react';
-import { CustomLink } from '@/components/ui/CustomLink';
+
 import { X } from 'lucide-react';
+import { CustomLink } from '@/components/ui/CustomLink';
+import { Logo } from '@/components/ui/Logo';
 
 interface Props {
 	isOpen: boolean;
@@ -16,7 +18,7 @@ export const MobileNav = ({ isOpen, onClose }: Props) => {
 					isOpen ? 'translate-x-0' : 'translate-x-[100%]'
 				}`}>
 				<div className='text-3xl w-full flex justify-between items-center mt-4'>
-					<p className='font-bold'> Menu</p>
+					<Logo onClick={onClose} />
 					<button onClick={onClose} className='p-1.5'>
 						<X />
 					</button>

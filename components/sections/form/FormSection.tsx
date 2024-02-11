@@ -21,7 +21,7 @@ export const FormSection = () => {
 				<Image
 					className='absolute bottom-[-10%] right-10 hidden md:block md:w-1/3 lg:w-1/2 '
 					src={'/svg/rocket.svg'}
-					alt=''
+					alt='rocket'
 					width={800}
 					height={800}
 				/>
