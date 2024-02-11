@@ -39,10 +39,10 @@ export const Nav = () => {
 			<Wrapper className='flex justify-between items-center py-4 '>
 				<Logo />
 				<div className='hidden lg:flex items-center gap-6 '>
-					<CustomLink className='p-0' variant={'default'} href='#startups'>
+					<CustomLink className='p-0' variant={'default'} href='/#startups'>
 						Startups
 					</CustomLink>
-					<CustomLink className='p-0' variant={'default'} href='#contact'>
+					<CustomLink className='p-0' variant={'default'} href='/#contact'>
 						Contact
 					</CustomLink>
 					<CustomLink variant={'outline'} size={'lg'} href='/work-with-us'>

@@ -6,8 +6,8 @@ import { Logo } from '@/components/ui/Logo';
 import { CustomLink } from '@/components/ui/CustomLink';
 import { AnimationControls, motion } from 'framer-motion';
 import { fade } from '@/animations/animations';
-import Image from 'next/image';
 import { useScrollAnim } from '@/hooks/useScrollAnim';
+import Image from 'next/image';
 
 export const Footer = () => {
 	const [footer, footerControlls] = useScrollAnim(0.2);
@@ -69,7 +69,7 @@ export const Footer = () => {
 						Netherlands
 					</p>
 
-					<CustomLink href='#contact' className='text-primary-blue px-0' size={'sm'}>
+					<CustomLink href='/#contact' className='text-primary-blue px-0' size={'sm'}>
 						Send us an email
 					</CustomLink>
 				</div>

@@ -29,7 +29,7 @@ export const MobileNav = ({ isOpen, onClose }: Props) => {
 					className='p-0 md:p-0 font-bold text-lg sm:text-xl'
 					size={'lg'}
 					variant={'default'}
-					href='#startups'>
+					href='/#startups'>
 					Startups
 				</CustomLink>
 				<CustomLink
@@ -37,7 +37,7 @@ export const MobileNav = ({ isOpen, onClose }: Props) => {
 					className='p-0 md:p-0 font-bold text-lg sm:text-xl'
 					size={'lg'}
 					variant={'default'}
-					href='#contact'>
+					href='/#contact'>
 					Contact
 				</CustomLink>
 				<CustomLink

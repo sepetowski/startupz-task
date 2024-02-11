@@ -4,7 +4,7 @@ import React from 'react';
 import { Section } from '@/components/ui/Section';
 import { Wrapper } from '@/components/ui/Wrapper';
 import { motion } from 'framer-motion';
-import { goUpAnim } from '@/animations/animations';
+import { fade, goUpAnim } from '@/animations/animations';
 import Image from 'next/image';
 import { CustomLink } from '@/components/ui/CustomLink';
 
@@ -48,9 +48,11 @@ export const Hiring = () => {
 						<p>to join and help build our startups.</p>
 						<p>Check out our current openings</p>
 					</motion.div>
-					<CustomLink variant={'primary'} href='/jobs'>
-						See current openings
-					</CustomLink>
+					<motion.div variants={fade}>
+						<CustomLink variant={'primary'} href='/jobs'>
+							See current openings
+						</CustomLink>
+					</motion.div>
 				</div>
 			</Wrapper>
 			<Image

@@ -1,25 +1,16 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Wrapper } from '@/components/ui/Wrapper';
 import { CustomLink } from '@/components/ui/CustomLink';
-import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
-import { useNavShadowContext } from '@/store/NavShadowContext';
 import { motion } from 'framer-motion';
 import { fade, goUpAnim } from '@/animations/animations';
+import { HeaderWrapper } from '../ui/HeaderWrapper';
+import Image from 'next/image';
 
 export const Header = () => {
-	const [element, view] = useInView({ threshold: 0.75 });
-	const { toggleShadow } = useNavShadowContext();
-
-	useEffect(() => {
-		if (view) toggleShadow(false);
-		else toggleShadow(true);
-	}, [view, toggleShadow]);
-
 	return (
-		<header ref={element} className='relative'>
+		<HeaderWrapper>
 			<Wrapper className='min-h-screen h-0 w-full flex-col-reverse lg:flex-row  flex justify-center lg:justify-between items-center text-center  overflow-x-hidden lg:text-left  '>
 				<motion.div variants={fade} initial='hidden' animate='show' className='mt-4 lg:mt-0'>
 					<motion.h1
@@ -50,6 +41,6 @@ export const Header = () => {
 					/>
 				</motion.div>
 			</Wrapper>
-		</header>
+		</HeaderWrapper>
 	);
 };
