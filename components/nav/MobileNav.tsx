@@ -45,7 +45,7 @@ export const MobileNav = ({ isOpen, onClose }: Props) => {
 					className='p-0 md:p-0 font-bold text-lg sm:text-xl'
 					size={'lg'}
 					variant={'default'}
-					href='/'>
+					href='/work-with-us'>
 					Work with us!
 				</CustomLink>
 			</div>

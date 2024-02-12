@@ -17,7 +17,7 @@ const Home = () => {
 					desc='We create products that have innovation and technology at their core. We value working with talented people that understand the possibilities of today.'
 					items={WHO_WE_ARE_DESCRIPTIONS}
 					img={{
-						alt: '',
+						alt: 'question mark icon',
 						src: '/svg/questionMark.svg',
 					}}
 				/>
@@ -28,7 +28,7 @@ const Home = () => {
 					title='Our core Values'
 					items={OUR_CORE_VALUES}
 					img={{
-						alt: '',
+						alt: 'light bulb icon',
 						src: '/svg/lightBulb.svg',
 					}}
 				/>
