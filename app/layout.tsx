@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
 import { NavShadowProvider } from '@/store/NavShadowContext';
+import { Assistant } from '@/components/assistant/Assistant';
 
 export const metadata: Metadata = {
 	title: 'Startupz',
@@ -25,6 +26,7 @@ export default function RootLayout({
 					<Nav />
 					{children}
 					<Footer />
+					<Assistant />
 				</body>
 			</NavShadowProvider>
 		</html>
